@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap');
+
+
 :root {
     --primary-color: #b11d3a;
     --primary-color2: #262626;
@@ -6,544 +9,312 @@
     --primary-color5: #FFDCDE;
     --primary-color6: #181818;
     --primary-color7: #FFEBEB
+
 }
 
 body{
+    font-family: 'Nunito-Sans';
     background: var(--primary-bg);
 }
+
+/*HEADER*/
 header .nav {
     display: flex;
     color: black;
-    padding:0 30px;
+    /* padding:0 30px; */
     text-decoration: none;
     background: var(--primary-color3);
+    justify-content: space-around;
+    font-size: 2em;
+    margin: 1vw;
 }
 
 header .menu {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     text-decoration: none;
     color: black;
-    padding:  15px 30px;
-    font-size: 15px;
-    text-align: center;
-    margin: 0 150px;
 }
 
 header .menu a {
     display: flex;
-    justify-content: space-between;
     text-decoration: none;
     color: black;
-    padding: 0 30px;
-    font-size: 15px;
     text-align: center;
+    width: 5.5em;
 }
 header .contacts {
     display: flex;
-    justify-content: space-between;
     text-decoration: none;
     color: black;
-    font-size: 15px;
+    text-decoration: none;
     text-align: center;
-    text-align: center;
-    margin: 0 50px;
 }
-
-header .contacts .bordure {
-    display: flex;
-    justify-content: space-between;
-    color: #efefef;
-    padding:10px 30px;
-    background: #b11d3a;
-    border:#b11d3a 1px;
-    border-radius: 20px;
+header .logo{
+  width: 3.5em;
+  height: 1.7em;
+}
+header .bordure {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #b11d3a;
+  padding: .5rem;
+  border-radius: 25px;
     
 }
 header .submenu {
-    border: 0;
-    background: #ffffff;
     color: #b11d3a;
-}
-header .submenu a {
-    border: 0;
-    background: #ffffff;
-    color:#efefef;
-    
+    width: 6rem;
+    border: none;
 }
 
 /*Fin head*/
 
-/*bannier*/
+/*banniere*/
 
 
-.bannier {
+.banniere {
     position: relative;
-    height: 60vh;
-    width: 100%;
+    height: 50vw;
     background-image:
       linear-gradient(rgba(52, 52, 52, 0.5), rgba(60, 60, 60, 0.284)),
       url("../img/26.png");
     background-size: cover;
-    margin-top: -10vh;
+}
+
+.banniere .description {
+  width: 45vw;
+  color: var(--primary-color3);
+  font-size: 2em;
+  padding: 7rem;
+}
+.banniere .description h2 {
+    font-size: 2em;
+}
+   
   
-  }
-  
-  
-  
-  
-  .bannier .description {
-  
-  
-    left: 0;
-    top: 0;
-    margin: 6rem 11rem;
-    padding: 7rem;
-  }
-  
-  .bannier .description h2 {
-  
-    color: var(--primary-color3);
-    font-size: 3rem
-  }
-  
-  .bannier .description p {
-    width: 52vh;
-    color: var(--primary-color3);
-  }
-  
-  
-  .bannier .description input {
+  .banniere .description input {
     background-color: #b11d3a;
-    border-radius: 21px;
-    padding: 12px 21px;
+    border-radius: 50px;
+    padding: 1rem ;
+    font-size: .7em;
     color: #ffffff;
-    border: 0;
+    border: none;
+}
   
-  }
-  
-  
-  .bannier .tre-bottom {
-    position: relative;
-    align-items: center;
-    display: flex;
-    padding: 0 30rem;
-  
-  
-  }
-  
-  .bannier .tre-bottom .border-btm {
-    position: relative;
-    width: 11px;
-    height: 11px;
-    background-color: var(--primary-bg);
-    margin: 2vh;
-    top: 5vh;
-    border-radius: 12vh;
-  
-  
-  }
-  
-  .bannier .tre-bottom .border-btm3 {
-    position: relative;
-    width: 21px;
-    height: 8px;
-    background-color: var(--primary-bg);
-    margin: 2vh;
-    top: 5vh;
-    border-radius: 12vh;
-  
-  
-  }
-  
-  .a-propos{
-    margin-top: -140px;
+  /*SIMPLON AU SENEGAL*/
+.a-propos{
     justify-content: center;
-    margin-left: 50px;
     background-color: #efefef;
-        }
-    .a-propos .block1{
+}
+.a-propos .block1{
         display: flex;
         padding: 200px;
-        margin-left: 140px;
-        
-        
-    }
-    .a-propos .block2 {
-        
-        padding:0 20px;
-        margin:0 20px;
-        width: 48vh;
-        font-size: medium;
-    
-    
-    
-    }
-    .a-propos .block1 img {
-        height: 22rem;
-        width: 20rem;
-        border-radius: 25px;
-        padding: 9px 0;
-    }
-    .a-propos .block2 h2 {
-        color: #b11d3a;
-    }
-    .a-propos p {
-        font-size: 20px;
-    }
+        margin-left: 140px; 
+}
+.a-propos .block2 {
+  margin:0 20px;
+  width: 25vw;
+}
+.a-propos .block1 img {
+  height: 25vw;
+  width: 25vw;
+  border-radius: 25px;
+}
+.a-propos .block2 h2 {
+  color: #b11d3a;
+  font-size: 2em;
+}
+.a-propos p {
+  font-size: 1.5em;
+}
 
 /* FIN APROPOS*/
 
-/* NOS NOUVELLE*/
+/* EVENT */
 
-
- 
-.nouvelle  {
-  position: absolute;
-  background: var(--primary-color3);
-  align-items: center;
-  margin-bottom: 20%;
-  width: 99%;
-  height: 120vh;
-  justify-content: center;
-
-  
-
-
- }
- .nouvelle .container  {
-  position: relative;
-  background: var(--primary-color3);
-  padding: 9vh 93vh ;
- }
-
-
-.nouvelle .peda-plier {
- 
-  
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  font-size: 2vh; 
-  text-align: left;
+#event .event-list {
   display: flex;
-  width: 5%;  
-  margin:0 1vh;
-
- }
- .nouvelle .peda-plier {
- 
-  
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  font-size: 2vh; 
-  text-align: left;
-  display: flex;
-  width: 5%;  
-  margin:0 1vh;
-
- }
-          
-.nouvelle .peda-plier .box-plier {
-   
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  font-size: 2.3vh; 
-  width:58vh;
-  height: 38vh;
-  text-align: left;
-  position: relative;
-  margin:0 1vh;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
- }
- .nouvelle  h2{
-  font-size: 4vh;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow';
-  color: var(--primary-color);
-  position: relative;
-  padding: 2vh 0;
-  width: 20rem;
-  
-
-}
-          
-.nouvelle .row {
-   
-  
-  font-family: Impact, Haettenschweiler, 'Arial Narrow', sans-serif;
-
- }
-
-.nouvelle .row  .actu{
-  font-size: 4vh;
-  font-family: cursivex ;
-  color: var(--primary-color);
-  position: relative;
-  padding: 1vh 0;
-margin-left: -44rem;
-
+  margin: 30px;
+  color: #fff;
+  justify-content: space-around;
 }
 
-.nouvelle .row  .date{
-  font-size: 3vh;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow';
-  background: var(--primary-color);
-  position: absolute;
-margin-left: 17rem;
-border-bottom-left-radius: 6rem;
-border-bottom-right-radius: 6rem;
-color: #ffffff;
-height: 3rem;
-align-items: center;
-text-align: center;
-justify-content: center;
-bottom: 11rem;
-padding: 5px 6px;
-
-}
-          
-.nouvelle .peda-plier .date p {
-   
-  position: relative;
-  font-size: 12px; 
-  font-family: fantasy;
-  bottom: 12px;
-  color: #ffffff;
-  font-family: Arial, Helvetica, sans-serif;
-
- }
- 
-
-          
-.nouvelle .peda-plier .box-plier .numb {
-   
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  text-align: left;    
-  position: relative;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow', sans-serif;
-  top: 2vh;
-
- }
-
- .nouvelle .peda-plier .box-plier .numb  img{
-   
-width: 37vh;
-border-radius: 10px;
-height: 13rem;
- 
- }
-          
-.nouvelle .peda-plier .box-plier h3 {
-   
-  position: relative;
-  font-size: 2vh; 
-  font-family: fantasy;
-  top: 1vh;
-
- }
-
-          
-.nouvelle .peda-plier .box-plier .desc {
-   
-  position: relative;
-  font-size: 2vh; 
-  font-family: fantasy;
-  top: 1px;
-  color: #464545;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
- }
- .nouvelle  .plus{
-  font-size: 3vh;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow';
-  color: var(--primary-color);
-  position: absolute;
-  padding: 2vh 122px;
-  width: 20rem;
-  right: 0;
-
-}
-
-.nouvelle  .grid-container {
-  display: grid;
-  grid-template-columns: 44% 44% ;
-  padding: 20px 70px;
-  justify-content: center;
-  align-items: center;
-}
-.nouvelle  .grid-item {
-  background-color: var(--primary-color);
+#event .event-list div.event-item:nth-child(1) {
+  flex-wrap: wrap;
+  display: flex;    
+  width: 450px;
+  height:130px;
+  background: #ce0033;
   padding: 20px;
-  font-size: 22px;
-  text-align: left;
-  margin: 2rem;
+  align-items: center;
+  border-radius: 10px;
+}
+
+#event .event-list div.event-item:nth-child(2) {
   display: flex;
+  width: 450px;
+  height: 130px;
+  background: #ce0033;
+  padding: 20px;
+  align-items: center;
+  border-radius: 10px;
 }
-
-
-.nouvelle .grid-container  .date{
-  font-size: 5vh;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow';
-margin-left: 1rem;
-
-color: #ffffff;
-height: 3rem;
-align-items: center;
-text-align: left;
-justify-content: center;
-padding: 18px 6px;
+.event-nombre{
+  font-size: 30px;
+  font-weight: bold;
 
 }
-          
-.nouvelle .grid-container .date p {
-   
-  position: relative;
-  font-size: 12px; 
-  font-family: fantasy;
-  color: #ffffff;
-  font-family: Arial, Helvetica, sans-serif;
-
- }
-
-        
-.nouvelle .grid-container .next{
-   
-  position: relative;
-  font-size: 22px; 
-  font-family: fantasy;
-  bottom: 12px;
-  color: #ffffff;
-  font-family: Arial, Helvetica, sans-serif;
-  width:18rem   ;
-  padding: 12px 28px;
-
-
- }
- .nouvelle .grid-container .next h3{
-   
-  position: relative;
-  font-size: 22px; 
-  font-family: fantasy;
-  color: #ffffff;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode',Arial, sans-serif;
-  width: 18rem   ;
-
- }
- .nouvelle .grid-container h3 i{
-   
-  font-size: 21px; 
-  color: #ffffff;
-
- }
- .nouvelle .grid-container  .i{
-  font-size: 21px; 
-  font-size: 52px;
-  color: #ffffff;
-  margin: 3rem 2rem;
-
- }
-
- .nouvelle   .actu2{
-  font-size: 4vh;
-  font-family: cursivex ;
-  color: var(--primary-color);
-  position: relative;
-  padding:0 198px ;
-  padding-top: 4rem;
-
+.date{
+  margin: 10px;
 }
-.nouvelle  .decouve{
-  font-size: 3vh;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow';
-  color: var(--primary-color);
+.event-text{
+  font-weight: bold;
+}
+
+/* ACTUALITES */
+
+#nouvelles .actualite{
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  margin-left:3.5% ;
+  
+  width: 80%;
+}
+#nouvelles .image-act p{
+  color: #fff;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30px;
+  padding-bottom: 8px;
+  border-radius: 0px 0px 20px 20px;
+  margin-left: 200px;
+  margin-top: -10px;
   position: absolute;
-  padding: 0px 12px;
-  width: 20rem;
-  right: 0;
-  bottom:0;
-  margin-top: 0;
+  background-color: #ce0033;
+}
+#nouvelles .image-act p span{
+  font-size: 10px;
+}
+#nouvelles .img-actualite{
+  width: 20vw;
+  height: 10vw;
+  border-radius: 10px;
+}
+#nouvelles .total-actualite{
+  padding: 20px;
 
 }
-
-.découvertes {
-  background: var(--primary-color3);
-  position: relative;
-  height: 90vh;
-  width: 100%;
-  background-image:
-    linear-gradient(rgba(52, 52, 52, 0.5), rgba(60, 60, 60, 0.284)),
-    url("../img/35.png");
-  background-size: cover;
-  margin-top: 120vh;
-  
-
+#nouvelles .actualite-1{
+  font-weight: bold;
 }
- /**/
-.découvertes .block3 {
-  
-  
-  left: 0;
-  top: 0;
-  margin: 10rem 11rem;
-  padding: 11rem 5rem ;
+#nouvelles h4{
+  color: #ce0033;
+  font-size: 1.5em;
+  text-align: right;
+}
+#nouvelles h4 span{
+  color: #fff;
+  background-color: #ce0033;
+  padding: 5px;
+  border-radius: 50%;
 }
 
-.découvertes .block3 h2 {
-
-  color: var(--primary-color3);
-  font-size: 5rem;
-  
+#event .event-list {
+  display: flex;
+  margin: 30px;
+  color: #fff;
+  justify-content: space-around;
 }
 
-.découvertes .block3 p {
-  width: 66vh;
-  color: var(--primary-color3);
-  font-size: 19px;
-  }
-  .découvertes .block4 {
-    width: 60%;
-    background: #b11d3a;
-    display: flex;
-    margin-left: 15rem;
-    padding: 0 6rem;
-    color: #efefef;
-    font-size:xx-large;
-    position: absolute;
-    margin-top: -150px;
-    justify-content: center;
-    justify-content: space-between;
-    text-align: center;
+#event .event-list div.event-item:nth-child(1) {
+  flex-wrap: wrap;
+  display: flex;    
+  width: 450px;
+  height:130px;
+  background: #ce0033;
+  padding: 20px;
+  align-items: center;
+  border-radius: 10px;
+}
 
-  }
-  .découvertes p {
+#event .event-list div.event-item:nth-child(2) {
+  display: flex;
+  width: 450px;
+  height: 130px;
+  background: #ce0033;
+  padding: 20px;
+  align-items: center;
+  border-radius: 10px;
+}
+.event-nombre{
+  font-size: 30px;
+  font-weight: bold;
+
+}
+.date{
+  margin: 10px;
+}
+.event-text{
+  font-weight: bold;
+}
+
+/* DECOUVERTE */
+
+#decouverte .decouverte{
+    background-image:linear-gradient(#5144443e, #514444b1) , url(images/35.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    position: relative;
+    padding-top: 8%;
+    padding-left: 8%;
+    margin-top: 50px;
+    color: white;
+}
+#decouverte .decouverte-h1{
+    font-size: 5em;
+    padding-top: 150px;
+}
+#decouverte .decouverte p{
     font-size: 20px;
-  }
+}
+#decouverte .decouverte-chiffre{
+    background-image:  url(images/decouverte.png);
+    display: flex;
+    position: absolute;
+    width: 90%;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top:-50px;
+    margin-left: 5%;
+    justify-content: space-around;
+    text-align: center;
+    color: #fff;
+}
+h5{
+    font-size: 3em;
+}
+
 
   /**/
 
 
 
   .formateurs  h2{
-    font-size: 4vh;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+    font-size: 4em;
     color: var(--primary-color);
     position: relative;
-    padding: 12vh 0;
-    width: 20rem;
-    
   
   }
-  .formateurs  .blog{
+  .formateurs  .blog
   
-    display: block;
-    align-items:start;
-    text-align:left;
-    justify-content: left;
   
-  }
+  
+  
   .formateurs  .blog .actu2{
   
     display: block;
@@ -552,38 +323,23 @@ padding: 18px 6px;
     justify-content: left;
   
   }
-  .formateurs .row {
-     
-    
-    font-family: Impact, Haettenschweiler, 'Arial Narrow', sans-serif;
-  
-   }
+
   
   .formateurs .row  .actu{
-    font-size: 4vh;
-    font-family: cursivex ;
+    font-size: 4em;
     color: var(--primary-color);
     position: relative;
-    padding: 1vh 0;
-  margin-left: -44rem;
   
   }
   
   
   .formateurs  .grid-container {
+    justify-content: center;
     display: grid;
     grid-template-columns: 34% 34% ;
-    padding: 10px 0px;
-    justify-content: center;
-    align-items: center;
-    height: 40%;
   }
   .formateurs  .grid-item {
-    background-color: white;
-    padding: 50px 0;
-    font-size: 22px;
-    text-align: left;
-    margin: 2rem 4rem;
+    width: 30vw;
     display: flex;
     border-radius: 12px;
     border: #f0f0f0 solid 1px;
@@ -592,16 +348,10 @@ padding: 18px 6px;
   
   
   .formateurs .grid-container  .profil{
-    font-size: 5vh;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow';
-  margin  : -6rem;
-  
-  color:black;
-  height: 3rem;
-  align-items: center;
-  text-align: left;
-  justify-content: center;
-  padding: 1px 6px;
+  position: relative;
+  width: 13rem;
+  height: 15rem;
+  border-radius: 23px;
   
   }
             
@@ -616,15 +366,10 @@ padding: 18px 6px;
   
           
   .formateurs .grid-container .next{
-     
-    position: relative;
     font-size: 22px; 
-    font-family: fantasy;
-    bottom: 12px;
-    color:black;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Nunito-Sans';
     width:18rem   ;
-    padding: 12px 120px;
+    padding: 3em 0 0 2em;
   
   
    }
@@ -639,13 +384,10 @@ padding: 18px 6px;
   
    }
    .formateurs .grid-container .next a{
-     
-    position: absolute;
     text-decoration: none;
     font-size: 21px; 
-    font-family: fantasy;
     color: #e6e6e6;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode',Arial, sans-serif;
+    font-size: 'Nunito-Sans';
     background: #b11d3a;
     border-radius: 33px;
     padding: 9px  20px;
@@ -663,18 +405,15 @@ padding: 18px 6px;
     background: #ff0d0d;
     width: 1vh;
     height: 9vh;
-    margin: -10vh -15vh;
+    margin: 10vh 15vh;
     z-index: 22;
   
    }
   
    .formateurs   .actu2{
-    font-size: 4vh;
-    font-family: cursivex ;
+    font-size: 4em;
     color: var(--primary-color);
-    position: relative;
-    padding:0 198px ;
-    padding-top: 4rem;
+
   
   }
   .formateurs  .decouve{
@@ -697,7 +436,6 @@ padding: 18px 6px;
   }
   
   .apprenants .class-apprenants {
-    width: 90%;
     margin-left: 5rem;
     padding: 12rem 10rem;
     margin-top: 8rem;
@@ -714,6 +452,7 @@ padding: 18px 6px;
     display: block;
     border-radius: 12px;
     border: #acacac3a solid 1px;
+    
   
   }
   
@@ -758,6 +497,8 @@ padding: 18px 6px;
     display: block;
     border-radius: 12px;
     border: #acacac3a solid 1px;
+    border-bottom: red solid 12px;
+
   
   }
   
@@ -770,7 +511,7 @@ padding: 18px 6px;
     padding: 4rem  0;
     height: 18rem;
     display: block;
-    border-bottom: red solid 12px;
+
   }
   
   .apprenants .block5 .bg-img span {
@@ -854,12 +595,13 @@ padding: 18px 6px;
   
   /**/
   .apprenants .block6 {
-    width: 70%;
   
     margin-left: 15rem;
     padding: 1rem;
-    margin-top: 20rem;
+    margin-top: 0rem;
     display: flex;
+    border:#b11d3a solid 1px;
+
   }
   
   .apprenants .block6 h2 {
@@ -887,7 +629,7 @@ padding: 18px 6px;
   position: relative;
   height: 90vh;
   width: 100%;
-  margin-top: -51vh; 
+  margin-top: 51vh; 
 
 }
  /**/
@@ -1067,7 +809,7 @@ padding: 18px 6px;
     background-color: #b11d3a;
     width: 12vh;
     z-index: 22;
-    margin-left: -1rem;
+    margin-left: 1rem;
   }
    
   .alumni .block .bg-img .time {
@@ -1494,7 +1236,7 @@ padding: 2vh 0;
     }
 .fout ul {
 width: 60%;
-margin: 1vh -4vh;
+margin: 1vh 4vh;
 display: flex;
 justify-content: space-around;
 }
