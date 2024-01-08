@@ -339,6 +339,7 @@ h5{
     grid-template-columns: 34% 34% ;
   }
   .formateurs  .grid-item {
+    height: 23vw;
     width: 30vw;
     display: flex;
     border-radius: 12px;
