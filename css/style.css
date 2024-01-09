@@ -504,11 +504,3 @@ footer section{
     padding: 3rem;
 }
 
-@media only screen and ( max-width: 800px){
-    body{
-        display: block;
-    } 
-    .navbar{
-        background-color: #000;
-    }
-}
